@@ -1,0 +1,233 @@
+<!-- Thiss tells the browser the page is a html document -->
+<!DOCTYPE html>
+<!-- this tells the browser the page is in English -->
+<html lang="en">
+<!-- This defines the encoding used for the page -->
+
+<head>
+    <!-- This defines the encoding used for the page. -->
+    <meta charset="utf-8" />
+    <!-- This prevents caching over secured connections -->
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge" />
+    <!-- This describes the website for SEO -->
+    <meta name="description" content="Imaan's personal website" />
+    <!-- This describes the author of the website -->
+    <meta name="author" content="Imaan Alkali" />
+    <!-- This defines the viewport making our website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- This is the title of the site in the browser -->
+    <title> Imaan's website</title>
+    <!-- This is the icon that will be beside our page title -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- This tells the browser to load the image on time -->
+    <link rel="preload" as="image" href="img/profile photo.jpeg" />
+
+</head>
+<!-- this contains the content that is visible to user -->
+
+<body>
+    <!-- the header tag tells the browser that this contents will be the top of our -->
+    <header class="header" data-header>
+        <!-- this will wrap our navigation bar -->
+        <div class="container">
+            <!-- for our logo -->
+            <a href="#" class="logo"> Imaan's Website</a>
+            <!-- This is a navigation bar  -->
+            <nav class="navbar" data-navbar>
+                <!-- This is wraps our items in the navigation bar -->
+                <ul class="navbar-list">
+                    <li> <a href="#" class="navbar-link"> Home</a></li>
+                    <li> <a href="#" class="navbar-link"> Portfolio</a></li>
+                    <li> <a href="#" class="navbar-link"> Skills</a></li>
+                    <li> <a href="#" class="navbar-link"> Timeline</a></li>
+                    <li> <a href="#" class="navbar-link"> Pricing</a></li>
+                    <li> <a href="#" class="navbar-link"> Blog</a></li>
+                    <li> <a href="#" class="navbar-link"> Contact me</a></li>
+                </ul>
+            </nav>
+            <!-- The button to toggle -->
+            <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggle>
+                <!-- This spans the line for our hsmburger button -->
+                Click to Toggle Menu
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </button>
+        </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- start of main tag where all middle elements reside -->
+            <main>
+                <!-- represents a unique portion of the main tag  -->
+                <article>
+                    <!-- HERO tag -->
+                    <section class="section hero" id="home" aria-label="hero">
+                        <div class="container">
+                            <!-- this is a figure element for out image -->
+                           
+                            <figure class="hero-banner img-hoder has-before" style="width:642;height:840">
+                                <!-- Thgis is our imagen banner -->
+                                <img src="img/profile photo.jpeg" width="440" height="640"
+                                alt="imaans photo" class="img-cover">
+                            </figure>
+                            <!-- this is the div for the hero content -->
+                            <div class="hero-content">
+                                    <p class="section-subtitle"> Imaan Abdullahi Alkali</p>
+                                    <h1 class="h1 hero-title"> Software Engineer</h1>
+
+                                    <ul class="hero-list">
+                                        <!-- lists -->
+                                        <li> <a href=# class="lisi-link"> 
+                                            <span> Backend development</span>
+                                            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                                            </a>
+                                        </li>
+                                        <!-- list -->
+                                        <li> <a href=# class="lisi-link"> 
+                                            <span> Frontend development</span>
+                                            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                                            </a>
+                                        </li>
+                                        <!-- list -->
+                                        <li> <a href=# class="lisi-link"> 
+                                            <span> Figma designer</span>
+                                            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <!-- for experience list -->
+                                    <ul class="experiece">
+                                        <!-- for llist items -->
+                                        <li class="list-item">
+                                            <stronge class="strong">5+</stronge>
+                                            <span class="span">
+                                                 years of <br/>
+                                                 Experience
+                                            </span>
+                                        </li>
+                                        <li class="list-item">
+                                            <stronge class="strong">15+</stronge>
+                                            <span class="span">
+                                                 Satisfied <br/>
+                                                 Clients
+                                            </span>
+                                        </li>
+                                    </ul>
+                                    <!-- scroll down button -->
+                                    <a href="#" class="slide-down-btn" aria-label="scroll-down">
+                                        <ion-icon name="arow-down" aria-hidden="true"></ion-icon> 
+                                    </a>                               
+                            </div>
+                        </div> 
+                    </section>
+                    <!-- end of hero section -->
+                    <!-- the portfolio section -->
+                    <section class="section portfolio" id="portfolio" aria-label="portfolio">
+                       <!-- This is the container for our portfolio section -->
+                        <div class="container">
+                            <!-- This is the paragraph section -->
+                            <p class="section-subtitle">
+                                Portfolio
+                            </p>
+                            <!-- This is the header section -->
+                            <h2 class="h2 section-title"> Selected Works</h2>
+                            <!-- Thjis is the static scrollbar -->
+                        <ul class="has-scrollbar">
+                            <li class="scrollbar-item">
+                                <!-- these are our cards -->
+                                <div class="card">
+                                    <figure class="card-banner img-holder" style="width:600; height: 675;" loading="lazy" alt="Portfolio">
+                                    <img src="img/tech1.jpg" width="600" height="600" loading="lazy" alt="portfolio 1"/>
+                                    </figure>
+                                </div>
+                            </li>
+                            <li class="scrollbar-item">
+                                <!-- these are our cards -->
+                                <div class="card">
+                                    <figure class="card-banner img-holder" style="width:600; height: 675;" loading="lazy" alt="Portfolio">
+                                    <img src="img/tech2.jpg" width="600" height="600" loading="lazy" alt="portfolio 2"/>
+                                    </figure>
+                                </div>
+                            </li>
+                            <li class="scrollbar-item">
+                                <!-- these are our cards -->
+                                <div class="card">
+                                    <figure class="card-banner img-holder" style="width:600; height: 675;" loading="lazy" alt="Portfolio">
+                                    <img src="img/tech3.jpg" width="600" height="600" loading="lazy" alt="portfolio 3"/>
+                                    </figure>
+                                </div>
+                            </li>
+                            <li class="scrollbar-item">
+                                <!-- these are our cards -->
+                                <div class="card">
+                                    <figure class="card-banner img-holder" style="width:600; height: 675;" loading="lazy" alt="Portfolio">
+                                    <img src="img/tech4.jpg" width="600" height="600" loading="lazy" alt="portfolio 4"/>
+                                    </figure>
+                                </div>
+                            </li>  <li class="scrollbar-item">
+                                <!-- these are our cards -->
+                                <div class="card">
+                                    <figure class="card-banner img-holder" style="width:600; height: 675;" loading="lazy" alt="Portfolio">
+                                    <img src="img/flower 4.jpeg" width="600" height="600" loading="lazy" alt="portfolio 5"/>
+                                    </figure>
+                                    </div>
+                                </li>
+                            </ul>   
+                        </div>
+                    </section>
+                    <!-- end of portfolio -->
+                    <!--  start of skills -->
+                    <section class="section skills has-before" id="skills"
+                     aria-label="skills" style="background-image: url(img/flower\ 5.jpeg);">
+                        <div class="container">
+                            <p class="section-subtitle"> SKILLS</p>
+                            <h2  class="h2 section-title">Coding skills</h2>
+                            <p class="section-text"> I have 5+ years experience in full software development, 
+                                delivering high quality applications with emphaisi on desgin, proper code patters,
+                                 scalability and performance</p>
+                                 <ul class="secton-list"></ul>
+                                    <li class="skills item">
+                                        <div class="wrapper"></div>
+                                            <h3 class="skill-title" >
+                                                HTML & CSS
+                                            </h3>
+                                            <data class="skill-value" value="95"> 95%</data>
+                                        </div>
+                                        <div class="progress-box">
+                                            <div class="progress" style="width:90%"></div>
+                                        </div>  
+                                    </li>
+                                    <li class="skills item">
+                                        <div class="wrapper"></div>
+                                            <h3 class="skill-title" >
+                                               MERN STACK
+                                            </h3>
+                                            <data class="skill-value" value="95"> 95%</data>
+                                        </div>
+                                        <div class="progress-box">
+                                            <div class="progress" style="width:90%"></div>
+                                        </div>  
+                                    </li>
+                                    <li class="skills item">
+                                        <div class="wrapper"></div>
+                                            <h3 class="skill-title" >
+                                                FIGMA
+                                            </h3>
+                                            <data class="skill-value" value="95"> 95%</data>
+                                        </div>
+                                        <div class="progress-box">
+                                            <div class="progress" style="width:90%"></div>
+                                        </div>  
+                                    </li>
+                            </ul>
+                        </div>
+                        <div class="skills-banner has-before"></div>
+                    </section>
+                </article>
+            </main>
+
+</body>
+
+</html>
