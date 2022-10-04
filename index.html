@@ -27,36 +27,37 @@
 <!-- this contains the content that is visible to user -->
 
 <body>
-    <!-- the header tag tells the browser that this contents will be the top of our -->
+    <!-- This tells the browser that the content here is a header -->
     <header class="header" data-header>
-        <!-- this will wrap our navigation bar -->
+        <!-- This will wrap our navigation bar -->
         <div class="container">
-            <!-- for our logo -->
-            <a href="#" class="logo"> Imaan's Website</a>
-            <!-- This is a navigation bar  -->
-            <nav class="navbar" data-navbar>
-                <!-- This is wraps our items in the navigation bar -->
-                <ul class="navbar-list">
-                    <li> <a href="#" class="navbar-link"> Home</a></li>
-                    <li> <a href="#" class="navbar-link"> Portfolio</a></li>
-                    <li> <a href="#" class="navbar-link"> Skills</a></li>
-                    <li> <a href="#" class="navbar-link"> Timeline</a></li>
-                    <li> <a href="#" class="navbar-link"> Pricing</a></li>
-                    <li> <a href="#" class="navbar-link"> Blog</a></li>
-                    <li> <a href="#" class="navbar-link"> Contact me</a></li>
-                </ul>
-            </nav>
-            <!-- The button to toggle -->
-            <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggle>
-                <!-- This spans the line for our hsmburger button -->
-                Click to Toggle Menu
-                <span class="line line-1"></span>
-                <span class="line line-2"></span>
-                <span class="line line-3"></span>
-            </button>
+          <!-- This is for our logo -->
+          <a href="#" class="logo">Iman</a>
+          <!-- This is for our navigation bar -->
+          <nav class="navbar" data-navbar>
+            <!--This wraps our items -->
+            <ul class="navbar-list">
+              <!-- These are all our navbar links -->
+              <li><a href="#" class="navbar-link">Home</a></li>
+              <li><a href="#portfolio" class="navbar-link">Portfolio</a></li>
+              <li><a href="#skills" class="navbar-link">Skills</a></li>
+              <li><a href="#" class="navbar-link">Time</a></li>
+              <li><a href="#" class="navbar-link">Pricing</a></li>
+              <li><a href="#" class="navbar-link">Blog</a></li>
+              <li><a href="#" class="navbar-link">Contact</a></li>
+            </ul>
+          </nav>
+          <!-- The button to Toggle -->
+          <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+            <!--This spans the line for our hamburger button  -->
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+          </button>
         </div>
-    </header>
-    <!-- end of header -->
+      </header>
+      <!-- END OF HEADER -->
+
 
     <!-- start of main tag where all middle elements reside -->
     <main>
@@ -64,63 +65,89 @@
         <article>
             <!-- HERO tag -->
             <section class="section hero" id="home" aria-label="hero">
+                <!-- Comtainer for hero -->
                 <div class="container">
-                    <!-- this is a figure element for out image -->
-
-                    <figure class="hero-banner img-hoder has-before" style="width:642;height:840">
-                        <!-- Thgis is our imagen banner -->
-                        <img src="img/profile photo.jpeg" width="440" height="640" alt="imaans photo" class="img-cover">
-                    </figure>
-                    <!-- this is the div for the hero content -->
-                    <div class="hero-content">
-                        <p class="section-subtitle"> Imaan Abdullahi Alkali</p>
-                        <h1 class="h1 hero-title"> Software Engineer</h1>
-
-                        <ul class="hero-list">
-                            <!-- lists -->
-                            <li> <a href=# class="lisi-link">
-                                    <span> Backend development</span>
-                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                                </a>
-                            </li>
-                            <!-- list -->
-                            <li> <a href=# class="lisi-link">
-                                    <span> Frontend development</span>
-                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                                </a>
-                            </li>
-                            <!-- list -->
-                            <li> <a href=# class="lisi-link">
-                                    <span> Figma designer</span>
-                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                                </a>
-                            </li>
-                        </ul>
-                        <!-- for experience list -->
-                        <ul class="experiece">
-                            <!-- for llist items -->
-                            <li class="list-item">
-                                <stronge class="strong">5+</stronge>
-                                <span class="span">
-                                    years of <br />
-                                    Experience
-                                </span>
-                            </li>
-                            <li class="list-item">
-                                <stronge class="strong">15+</stronge>
-                                <span class="span">
-                                    Satisfied <br />
-                                    Clients
-                                </span>
-                            </li>
-                        </ul>
-                        <!-- scroll down button -->
-                        <a href="#" class="slide-down-btn" aria-label="scroll-down">
-                            <ion-icon name="arow-down" aria-hidden="true"></ion-icon>
+                  <!-- This is a figure element for our image -->
+                  <figure
+                    class="hero-banner img-holder has-before"
+                    style="--width: 640; --height: 840"
+                  >
+                    <!-- This is our image banner -->
+                    <img
+                      src="img/profile picture.jpeg"
+                      width="640"
+                      height="840"
+                      alt="Gerald's Photo"
+                      class="img-cover"
+                    />
+                  </figure>
+      
+                  <!-- This is div for hero content -->
+                  <div class="hero-content">
+                    <p class="section-subtitle">Iman</p>
+                    <h1 class="h1 hero-title">Software Engineer</h1>
+                    <!-- HERO LIST -->
+                    <ul class="hero-list">
+                      <!-- LISTS -->
+                      <li>
+                        <a href="#" class="list-link">
+                          <span class="span"> Backend Development </span>
+                          <ion-icon
+                            name="arrow-forward-outline"
+                            aria-hidden="true"
+                          ></ion-icon>
                         </a>
-                    </div>
+                      </li>
+                      <!-- LISTS -->
+                      <li>
+                        <a href="#" class="list-link">
+                          <span class="span"> Frontend Development </span>
+                          <ion-icon
+                            name="arrow-forward-outline"
+                            aria-hidden="true"
+                          ></ion-icon>
+                        </a>
+                      </li>
+                      <!-- LISTS -->
+                      <li>
+                        <a href="#" class="list-link">
+                          <span class="span"> Figma Design </span>
+                          <ion-icon
+                            name="arrow-forward-outline"
+                            aria-hidden="true"
+                          ></ion-icon>
+                        </a>
+                      </li>
+                    </ul>
+      
+                    <!-- FOR EXPERIENCE LIST -->
+                    <ul class="experience">
+                      <!-- For List Items -->
+                      <li class="list-item">
+                        <strong class="strong">5+</strong>
+                        <span class="span">
+                          Years of<br />
+                          Experience
+                        </span>
+                      </li>
+                      <!-- For List Items -->
+                      <li class="list-item">
+                        <strong class="strong">15+</strong>
+                        <span class="span">
+                          Satisfied<br />
+                          Clients
+                        </span>
+                      </li>
+                      <!-- End of List Items -->
+                    </ul>
+                    <!-- Scroll Down Button -->
+                    <a href="#" class="slide-down-btn" aria-label="scroll-down">
+                      <ion-icon name="arrow-down" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
                 </div>
-            </section>
+              </section>
+              <!-- END OF THIS HERO SECTION -->
             <!-- end of hero section -->
             <!-- the portfolio section -->
             <section class="section portfolio" id="portfolio" aria-label="portfolio">
@@ -188,53 +215,61 @@
                 </div>
             </section>
             <!-- end of portfolio -->
-            <!--  start of skills -->
-            <section class="section skills has-before" id="skills" aria-label="skills"
-                style="background-image: url(img/flower\ 5.jpeg);">
-                <div class="container">
-                    <p class="section-subtitle"> SKILLS</p>
-                    <h2 class="h2 section-title">Coding skills</h2>
-                    <p class="section-text"> I have 5+ years experience in full software development,
-                        delivering high quality applications with emphaisi on desgin, proper code patters,
-                        scalability and performance</p>
-                    <ul class="secton-list"></ul>
-                    <li class="skills item">
-                        <div class="wrapper"></div>
-                        <h3 class="skill-title">
-                            HTML & CSS
-                        </h3>
-                        <data class="skill-value" value="95"> 95%</data>
+            <!-- START OF SKILLS -->
+        <section
+        class="section skills has-before"
+        id="skills"
+        aria-label="skills"
+        style="background-image: url('img/skills.jpg')"
+      >
+        <div class="container">
+          <div class="skills-content">
+            <p class="section-subtitle">Skills</p>
+
+            <h2 class="h2 section-title">Programming Skills</h2>
+
+            <p class="section-text">
+              I have 5+ years in the full software development cycle,
+              delivering high quality applications, with an emphasis on
+              design, proper code patterns, scalability and performance.
+            </p>
+
+            <ul class="skills-list">
+              <li class="skills-item">
+                <div class="wrapper">
+                  <h3 class="skill-title">HTML & CSS</h3>
+                  <data class="skill-value" value="95%">95%</data>
                 </div>
                 <div class="progress-box">
-                    <div class="progress" style="width:90%"></div>
+                  <div class="progress" style="width: 95%"></div>
                 </div>
-                </li>
-                <li class="skills item">
-                    <div class="wrapper"></div>
-                    <h3 class="skill-title">
-                        MERN STACK
-                    </h3>
-                    <data class="skill-value" value="50"> 50%</data>
-                    </div>
-                    <div class="progress-box">
-                        <div class="progress" style="width:90%"></div>
-                    </div>
-                </li>
-                <li class="skills item">
-                    <div class="wrapper"></div>
-                    <h3 class="skill-title">
-                        FIGMA
-                    </h3>
-                    <data class="skill-value" value="80"> 80%</data>
-                    </div>
-                    <div class="progress-box">
-                        <div class="progress" style="width:90%"></div>
-                    </div>
-                </li>
-                </ul>
+              </li>
+
+              <li class="skills-item">
+                <div class="wrapper">
+                  <h3 class="skill-title">JavaScript</h3>
+                  <data class="skill-value" value="80%">80%</data>
                 </div>
-                <div class="skills-banner has-before"></div>
-            </section>
+                <div class="progress-box">
+                  <div class="progress" style="width: 80%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="wrapper">
+                  <h3 class="skill-title">Figma Design</h3>
+                  <data class="skill-value" value="90%">90%</data>
+                </div>
+
+                <div class="progress-box">
+                  <div class="progress" style="width: 90%"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="skills-banner has-before"></div>
+        </div>
+      </section>
             <!-- start of timeline section -->
             <section class="section-timeline" id="timeline" aria-label="timeline">
                 <div class="container">
@@ -542,7 +577,7 @@
 
     <!-- CONTAINS JAVASCRIPT -->
     <!-- defer' tells the browser to load javascript AFTER the entire HTML document has been fully loaded -->
-    <script src="index.js" defer></script>
+    <script src="js/index.js" defer></script>
     <!-- source for icons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
